@@ -1,0 +1,28 @@
+### Endpoint para poner data inicial
+GET http://localhost:3000/api/seed
+
+### Endpoint para obtener los entrys
+GET http://localhost:3000/api/entries
+
+### Endpoint para guardar un entry
+POST http://localhost:3000/api/entries
+content-type: application/json
+
+{
+  "description": "unrailed"
+}
+
+### Endpoint para editar un entry por id
+PUT http://localhost:3000/api/entries/62f6d1a2dd291df132e449b5
+content-type: application/json
+
+{
+  "description": "unrailed",
+  "status": "finished"
+}
+
+### Endpoint para obtener un entry por id
+GET http://localhost:3000/api/entries/62f6d1a2dd291df132e449b5
+
+### Endpoint para bad request
+GET http://localhost:3000/api/bad-request
